@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting…</title>
+
+  <!-- Meta refresh fallback -->
+  <meta http-equiv="refresh" content="2; url=https://chatgpt.com">
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #0f0f0f;
+      color: #eaeaea;
+    }
+    .box {
+      text-align: center;
+    }
+    .spinner {
+      margin: 20px auto 0;
+      width: 32px;
+      height: 32px;
+      border: 3px solid #444;
+      border-top: 3px solid #eaeaea;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+  </style>
+
+  <script>
+    setTimeout(() => {
+      window.location.href = "https://chatgpt.com";
+    }, 2000);
+  </script>
+</head>
+<body>
+  <div class="box">
+    <h1>Redirecting you to our workspace…</h1>
+    <p>Please wait</p>
+    <div class="spinner"></div>
+  </div>
+</body>
+</html>
