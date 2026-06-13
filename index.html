@@ -1,192 +1,209 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>CUBE SAT HELIOS (AI DEFINITELY DID NOT OVERTHINK THIS)</title>
+  <title>!!! CUBE SAT HELIOS !!!</title>
 
   <style>
     body {
+      background: url("https://www.transparenttextures.com/patterns/cubes.png");
+      background-color: #0b0b0b;
+      color: lime;
+      font-family: "Comic Sans MS", "Papyrus", cursive;
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #0b0f1a;
-      color: #e6f1ff;
     }
 
-    header {
-      padding: 60px 20px;
-      text-align: center;
-      background: radial-gradient(circle at center, #1b2a4a, #05070d);
-      border-bottom: 2px solid #3aa0ff;
+    .blink {
+      animation: blink 0.8s infinite;
     }
 
-    h1 {
-      font-size: 44px;
-      margin: 0;
-      letter-spacing: 2px;
+    @keyframes blink {
+      0% { opacity: 1; }
+      50% { opacity: 0; }
+      100% { opacity: 1; }
     }
 
-    .sub {
-      opacity: 0.7;
-      margin-top: 10px;
+    marquee {
+      background: yellow;
+      color: black;
+      font-weight: bold;
+      padding: 5px;
     }
 
     .container {
-      max-width: 900px;
+      width: 900px;
       margin: auto;
-      padding: 30px;
+      background: rgba(0,0,0,0.8);
+      border: 5px double red;
+      padding: 20px;
     }
 
     .box {
-      background: rgba(255,255,255,0.03);
-      border: 1px solid rgba(58,160,255,0.4);
-      padding: 20px;
-      margin: 20px 0;
-      border-radius: 10px;
+      border: 3px ridge lime;
+      margin: 15px 0;
+      padding: 10px;
+      background: #111;
     }
 
-    .ai-warning {
-      position: fixed;
-      bottom: 10px;
-      right: 10px;
-      font-size: 11px;
-      opacity: 0.4;
-      transform: rotate(-8deg);
-      max-width: 200px;
+    h1 {
+      text-align: center;
+      font-size: 48px;
+      color: red;
+      text-shadow: 2px 2px yellow;
+    }
+
+    .counter {
+      font-family: monospace;
+      background: black;
+      color: red;
+      display: inline-block;
+      padding: 5px;
+      border: 2px solid red;
+    }
+
+    .bad {
+      color: magenta;
+      font-style: italic;
+    }
+
+    .tiny {
+      font-size: 10px;
+      opacity: 0.6;
     }
 
     .button {
       display: inline-block;
-      padding: 10px 15px;
-      background: #3aa0ff;
-      color: black;
-      text-decoration: none;
+      padding: 10px;
+      background: red;
+      color: white;
       font-weight: bold;
-      margin-top: 10px;
+      border: 2px outset white;
+      text-decoration: none;
     }
 
-    .fake-carousel {
-      display: flex;
-      gap: 10px;
-      overflow-x: auto;
-      padding: 10px 0;
-    }
-
-    .member {
-      min-width: 180px;
-      height: 120px;
-      background: rgba(255,255,255,0.05);
-      border: 1px dashed #3aa0ff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 12px;
-      text-align: center;
-    }
-
-    footer {
-      text-align: center;
-      padding: 40px;
-      opacity: 0.6;
-      font-size: 12px;
-    }
-
-    .glitch {
-      animation: flicker 2s infinite;
-    }
-
-    @keyframes flicker {
-      0% { opacity: 1; }
-      45% { opacity: 0.9; }
-      50% { opacity: 0.4; }
-      55% { opacity: 1; }
-      100% { opacity: 0.95; }
+    img {
+      border: 5px dashed yellow;
     }
   </style>
 </head>
 
 <body>
 
-<header>
-  <h1 class="glitch">THE CUBE SAT HELIOS PROJECT</h1>
-  <div class="sub">
-    student-led space engineering initiative (emotionally powered)
-  </div>
-</header>
+<marquee scrollamount="12">
+🚀 WELCOME TO THE OFFICIAL CUBE SAT HELIOS PROJECT WEBSITE 🚀 PLEASE READ EVERYTHING 🚀 WE ARE VERY SERIOUS 🚀
+</marquee>
+
+<h1 class="blink">CUBE SAT HELIOS</h1>
 
 <div class="container">
 
   <div class="box">
-    <h2>MISSION (REWRITTEN FOR CLARITY BUT SLIGHTLY WORSE)</h2>
+    <h2>MISSION STATEMENT</h2>
     <p>
-      We are secondary school students building a CubeSat to orbit Earth and
-      collect environmental data, specifically temperature patterns across cities,
-      in order to understand extreme heat and climate change impacts.
+      We are a <b>student led space team</b> building a CubeSat to measure temperature from space.
     </p>
-    <p>
-      The satellite will observe urban heat zones and generate data that might
-      possibly be useful to someone, somewhere, eventually.
+    <p class="bad">
+      (this sounded better when we wrote it for UCAS)
     </p>
   </div>
 
   <div class="box">
-    <h2>WHY THIS EXISTS</h2>
-    <p>
-      Because space is cool. Also climate change is real. Also we were allowed near
-      engineering tools and things escalated.
-    </p>
-  </div>
-
-  <div class="box">
-    <h2>WHO WE ARE</h2>
-    <div class="fake-carousel">
-      <div class="member">Student Engineer<br>(writes code at 2am)</div>
-      <div class="member">Systems Lead<br>(googles everything twice)</div>
-      <div class="member">Hardware Person<br>(holds screwdriver like weapon)</div>
-      <div class="member">Team Lead<br>(organises chaos)</div>
-    </div>
-  </div>
-
-  <div class="box">
-    <h2>OUR STORY (SHORTENED UNIRONICALLY)</h2>
-    <p>
-      We did CanSat. We did well. We got ideas. We escalated to CubeSats, which is
-      basically CanSat but with consequences.
-    </p>
-    <p>
-      Now we are balancing A-levels and orbital engineering, which is either impressive
-      or a cry for help.
-    </p>
-  </div>
-
-  <div class="box">
-    <h2>WHAT WE NEED</h2>
+    <h2>WHAT WE ACTUALLY DO</h2>
     <ul>
-      <li>Money (legal tender preferred)</li>
-      <li>Space-grade hardware (expensive)</li>
-      <li>Testing equipment (also expensive)</li>
-      <li>Launch opportunities (extremely expensive)</li>
+      <li>make slides</li>
+      <li>talk about space</li>
+      <li>google “how satellites work”</li>
+      <li>say “AI / machine learning” when confused</li>
+      <li>occasionally open CAD</li>
+    </ul>
+  </div>
+
+  <div class="box">
+    <h2>OUR TEAM</h2>
+
+    <table border="1" width="100%" bgcolor="#000">
+      <tr>
+        <th>Name</th>
+        <th>Role</th>
+        <th>Contribution</th>
+      </tr>
+      <tr>
+        <td>Student 1</td>
+        <td>Lead Engineer</td>
+        <td>watched YouTube videos</td>
+      </tr>
+      <tr>
+        <td>Student 2</td>
+        <td>Systems</td>
+        <td>PowerPoint specialist</td>
+      </tr>
+      <tr>
+        <td>Student 3</td>
+        <td>Outreach</td>
+        <td>writes "impact" repeatedly</td>
+      </tr>
+    </table>
+
+  </div>
+
+  <div class="box">
+    <h2>OUR STORY</h2>
+    <p>
+      We did CanSat and realised universities like it when you say “space”.
+      So now we are doing CubeSat, which is the same thing but more expensive and harder to explain.
+    </p>
+    <p class="tiny">
+      timeline: enthusiasm → confusion → fundraising page → existential dread → repeat
+    </p>
+  </div>
+
+  <div class="box">
+    <h2>WHY WE NEED MONEY</h2>
+    <ul>
+      <li>satellite parts (expensive unfortunately)</li>
+      <li>launch (VERY expensive unfortunately)</li>
+      <li>equipment (also expensive unfortunately)</li>
+      <li>our dreams (currently priceless but depreciating)</li>
     </ul>
 
-    <a class="button" href="#">DONATE (COMING SOON, LIKE OUR SLEEP)</a>
+    <a class="button" href="#">💰 DONATE NOW 💰</a>
+
+    <p class="tiny">
+      donations may or may not result in an actual satellite. no refunds.
+    </p>
   </div>
 
   <div class="box">
-    <h2>CONTACT</h2>
+    <h2>TESTIMONIALS</h2>
+    <p>"Very inspiring" — teacher who skimmed the poster</p>
+    <p>"Looks impressive" — someone on LinkedIn</p>
+    <p>"So proud of these young engineers" — local newspaper quote we reused</p>
+  </div>
+
+  <div class="box">
+    <h2>CONTACT US</h2>
     <p>
-      Interested in working with us? Please reach out.
-      We are excited to hear from literally anyone who understands orbital mechanics.
+      Email us if you want to sponsor us, collaborate, or validate our existence professionally.
+    </p>
+    <p>
+      Response time: 3–14 working days (depending on exams / motivation / launch trajectory)
     </p>
   </div>
 
 </div>
 
-<footer>
-  © CubeSat Helios Project — built by students, powered by caffeine and optimism
-</footer>
-
-<div class="ai-warning">
-  THIS PAGE WAS PARODIED BY AN AI THAT HAS NEVER LAUNCHED ANYTHING INTO ORBIT
+<div class="counter">
+  visitors: 000001337
 </div>
+
+<br><br>
+
+<center>
+  <img src="https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif" width="200">
+</center>
+
+<p class="tiny" align="center">
+THIS WEBSITE WAS DEFINITELY NOT MADE IN 2003 BUT IT FEELS LIKE IT
+</p>
 
 </body>
 </html>
